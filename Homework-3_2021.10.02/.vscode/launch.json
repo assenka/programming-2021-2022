@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "program": "${workspaceFolder}/output/main"
+      },
+      "osx": {
+        "MIMode": "lldb",
+        "miDebuggerPath": "lldb-mi",
+        "program": "${workspaceFolder}/output/main"
+      },
+      "windows": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb.exe",
+        "program": "${workspaceFolder}/output/main.exe"
+      },
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "/home/asenka/Рабочий стол/programming/programming-2021-2022/Homework-3_2021.10.02",
+      "environment": [],
+      "program": "/home/asenka/Рабочий стол/programming/programming-2021-2022/Homework-3_2021.10.02/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "externalConsole": false,
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
